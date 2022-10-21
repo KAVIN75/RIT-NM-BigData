@@ -1,0 +1,87 @@
+   										           211720118030
+
+				  SCOOP AND SCALA PROGRAMMING
+
+                                                                             HOMEWORK 3
+
+
+Q1.Write an object Conversions with methods inchestoFeet, milestoKms and
+poundsToKilos and invoke its methods from a class of your choice.
+
+object Conversions 
+{
+	def inchesToCentimeters(inches. Double) = inches * 2.5
+
+	def gallonsToLiters(gallons. Double) = gallons * 3.78541
+
+	def milesToKilometers(miles. Double) = miles * 1.60934
+}
+
+
+
+
+Q2.Write a Scala program to get the largest element of an array using reduceLeft.
+scala> val x = Array(10, 12, 28, 17,32, 39)
+
+   x.Array[Int] = Array(10, 12, 28, 17, 32, 39)
+
+   scala> x.reduceLeft(_ min _)
+
+   res. Int = 10
+
+  scala> x.reduceLeft(_ max _)
+
+  res. Int = 39
+
+
+
+Q 3.Write a Scala code which reverses the lines of a file (makes the first line as the last one and so on).
+   val filename = "/tmp/myfile.txt"
+
+   io.Source.fromFile(filename)
+
+  .getLines.toArray
+
+  .reverse
+
+  .mkString("\n")
+  
+  
+  
+Q 4.Mention the types of Variables in Scala? And What is the difference between them?
+	Each variable declaration is preceded by its type. By contrast, Scala has two types of variables. val creates an immutable variable (like final in Java) var creates a mutable variable
+
+
+
+Q 5.Mention the Advantages of Scala.
+	>Scala has a perfect syntax eliminating boilerplate code. 
+	>Scala require less code the same programs written in Java.
+	>It is an object-oriented language and also a functional language. 
+  
+
+
+Q 6.Explain the Operators in Scala.
+               > Arithmetic Operators 
+	> Assignment Operators
+	> Logical Operators
+	> Relational Operators
+	> Bitwise Operators
+
+
+
+Q 7.How is a Class different from an Object?
+	>A class is a template for declaring and creating objects whereas object is an instance of class.
+	>class is a logical entity whereas object is a real world entity.
+	>When a class is created, no memory is allocated.
+
+
+
+Q 8.Mention how Scala is different from Java.	
+	>Scala is a mixture of both object oriented and functional programming whereas Java is only an object oriented language
+	>Scala supports lazy evaluation wheras java doesn't support lazy evaluation.
+               >Scala variables are by default immutable type but java is mutable by default.
+
+
+
+Q 9.Explain the access Modifiers available in Scala.
+               Access Modifiers in scala is used to define the Members of packages, classes or objects can be labeled with the access modifiers private and protected, and if we are not using either of these two keywords, then access will be assumed as public. To use an access modifier, you include its keyword in the definition of members of package, class or object 
